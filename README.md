@@ -71,20 +71,20 @@ cat identifiers.txt
 Can you write a very short script (possibly one single commandline) to extract from the same file the species names?
 ```
 ​ # !bin/bash
-* # Pick lines without predicted: pattern
-* grep -v PREDICTED: identifiers.txt > notpredicted.txt
+ # Pick lines without predicted: pattern
+ grep -v PREDICTED: identifiers.txt > notpredicted.txt
 
-* # Lines with predicted
-* grep PREDICTED: identifiers.txt > predicted.txt
+ # Lines with predicted
+ grep PREDICTED: identifiers.txt > predicted.txt
 
-* # Generic and species names from subfile 1
-* cut -d ' ' -f 2,3 notpredicted.txt > joy.txt
+ # Generic and species names from subfile 1
+ cut -d ' ' -f 2,3 notpredicted.txt > joy.txt
 
-* # Generic and species names from subfile 2
-* cut -d ' ' -f 3,4 predicted.txt > joy.txt
+ # Generic and species names from subfile 2
+ cut -d ' ' -f 3,4 predicted.txt > joy.txt
 
-* # Species names alone
-* cut -d ' ' -f 2 joy.txt > nellyspecies.txt
+ # Species names alone
+ cut -d ' ' -f 2 joy.txt > nellyspecies.txt
 ```
 ### Question 14
 Once this is done, how do you count the species names with their order of multiplicity 
@@ -129,27 +129,27 @@ Of course there will be at least an if or a case construct in your script.
 ```
 ```
 ​# !bin/bash
-* echo "What is your name?"
-* read name
+ echo "What is your name?"
+ read name
 
-* # Assign date, time and day
-* date=$(date +%H)
-* time=$(date +%T)
-* day=$(date +%D)
+ # Assign date, time and day
+ date=$(date +%H)
+ time=$(date +%T)
+ day=$(date +%D)
 
-* # Prompt text
-* if [ $date -lt "12" ]
-* then
-* echo "Good morning $name"
-* echo "It is now $time on this lovely day of $day"
-* elif [[ $date -gt "12" && $date -lt "16" ]]
-* then
-* echo ""Good afternoon $name"
-* echo "It is now $time on this lovely day of $day"
-* else
-* echo ""Good evening $name"
-* echo "It is now $time on this lovely day of $day"
-* fi
+ # Prompt text
+ if [ $date -lt "12" ]
+ then
+ echo "Good morning $name"
+ echo "It is now $time on this lovely day of $day"
+ elif [[ $date -gt "12" && $date -lt "16" ]]
+ then
+ echo ""Good afternoon $name"
+ echo "It is now $time on this lovely day of $day"
+ else
+ echo ""Good evening $name"
+ echo "It is now $time on this lovely day of $day"
+ fi
 ```
 ### Question 20
 Suppose your current working directory is /home/icipe/Linux/Exercises/. What is the command that will enable to move to /home/icipe/Fun_stuff/?
