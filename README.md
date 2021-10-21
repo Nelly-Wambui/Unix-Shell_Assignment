@@ -8,9 +8,14 @@ How many processes are currently running on your system? Use ps and wc, the firs
 ### Question 2
 Write a script that upon invocation shows the time and date, lists all logged-in users, and gives the system uptime. 
 The script then saves this information to a logfile.
+```
+​nano date.sh
+type:
+uptime
+date
 
-​
-
+bash date.sh
+```
 ### Question 3
 Which command would you use in order to create an empty file in the current directory, let's say empty.txt?
 ```
@@ -153,4 +158,5 @@ Of course there will be at least an if or a case construct in your script.
 ```
 ### Question 20
 Suppose your current working directory is /home/icipe/Linux/Exercises/. What is the command that will enable to move to /home/icipe/Fun_stuff/?
-* 
+cd
+mkdir Fun_stuff
