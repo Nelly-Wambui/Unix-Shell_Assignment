@@ -114,7 +114,7 @@ Of course, don't issue 20 commands, but just one.
 Try this with the command "expr 1 / 0", whose purpose is to calculate the integer result of 1 divided by 0. What happens? Why?
 ```
 ​expr : division by zero
-It is not defined what 1 is being divided by
+It is not defined as a number divided by zero is undefined
 ```
 ### Question 18
 How can you separately redirect the standard output and the standard error streams into two separate files?
