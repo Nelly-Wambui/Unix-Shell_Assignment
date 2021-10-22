@@ -114,6 +114,7 @@ Of course, don't issue 20 commands, but just one.
 Try this with the command "expr 1 / 0", whose purpose is to calculate the integer result of 1 divided by 0. What happens? Why?
 ```
 ​expr : division by zero
+It is not defined what 1 is being divided by
 ```
 ### Question 18
 How can you separately redirect the standard output and the standard error streams into two separate files?
@@ -158,5 +159,5 @@ Of course there will be at least an if or a case construct in your script.
 ```
 ### Question 20
 Suppose your current working directory is /home/icipe/Linux/Exercises/. What is the command that will enable to move to /home/icipe/Fun_stuff/?
-cd
-mkdir Fun_stuff
+
+cd ../..
